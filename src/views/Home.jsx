@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
+import './Home.css';
 
 const featuredCats = [
-  { name: 'Whiskers', age: '2' },
-  { name: 'Mittens', age: '2' },
-  { name: 'Shadow', age: '1' },
+  { name: 'Whiskers', age: '2', breed: 'Sphynx' },
+  { name: 'Mittens', age: '2', breed: 'Persian' },
+  { name: 'Shadow', age: '1', breed: 'Russian Blue' },
 ];
 
 export default function Home() {
@@ -30,12 +31,9 @@ export default function Home() {
 
   return (
     <>
-      <section className="text-center mt-4">
+      <section className="home-intro text-center mt-4">
         <h2>Welcome to Purrfect Adoption</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc
-        </p>
+        <p>Welcome to Purrfect Adoption! We are dedicated to helping adorable cats find loving homes. Our mission is to connect cats in need with families who will cherish them forever.</p>
       </section>
 
       <section className="mt-5">
@@ -49,6 +47,7 @@ export default function Home() {
                 <div className="cat-info">
                   <h3 className="h5 mb-1">{cat.name}</h3>
                   <p className="mb-0">Age: {cat.age}</p>
+                  <p className="mb-0">Breed: {cat.breed}</p>
                 </div>
               </div>
             </div>

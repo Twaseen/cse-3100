@@ -1,0 +1,53 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters input,
+  .filters select {
+    max-width: 200px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #cc4c1d;
+    transition: box-shadow 0.3s ease;
+    font-size: 1rem;
+    height: 40px; 
+  }
+  
+  .filters input:focus,
+  .filters select:focus {
+    box-shadow: 0 0 5px rgba(165, 85, 28, 0.8);
+    border-color: #2a150b;
+  }
+  
+  .cat-card {
+    border: 1px solid #b74311;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cat-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cat-info {
+    background: #f4b18be1;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .cat-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #2c3e50;
+  }
+  
+  .cat-info p {
+    font-size: 0.9em;
+    color: #616161;
+  }
+  

@@ -1,0 +1,58 @@
+section {
+  padding: 20px;
+  background: linear-gradient(135deg, #fef6e8, #fde7ce); /* Warm gradient */
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+}
+
+section h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333333; /* Dark gray */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
+  color: #4e4c4f;
+  line-height: 1.8;
+}
+
+.home-intro {
+  background: linear-gradient(135deg, #fddcc1, #fce4d8); /* Warm, peachy gradient */
+  padding: 1.5em;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cat-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #face9f, #83694b); /* Subtle gradient */
+}
+
+.cat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cat-info {
+  background: linear-gradient(135deg, #edc39b, #9d6b49); /* Subtle warm gradient */
+  padding: 15px;
+  border-radius: 0 0 16px 16px;
+}
+
+.cat-info h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.cat-info p {
+  font-size: 1rem;
+  color: #616161;
+}

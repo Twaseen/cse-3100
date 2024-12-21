@@ -1,3 +1,31 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #b8704e;
+  color: #4E4C4F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #4E4C4F;
+}
+
+a {
+  text-decoration: none;
+  color: #D99873;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #A8654A;
+  text-decoration: underline;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -5,28 +33,99 @@
 }
 
 header {
-  padding: 1em;
+  padding: 1.5em;
+  background-color: #D99873;
+  color: #eaa988;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  color: #f8b88d;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 main {
   flex: 1;
-  padding: 1em;
+  padding: 2em;
+  background-color: #f6edd3;
 }
+
 footer {
-  padding: 1em;
+  padding: 1.5em;
   text-align: center;
+  background-color: #A8654A;
+  color: #daa786;
+}
+
+button,
+input[type="submit"] {
+  background-color: #D99873;
+  color: #e7aa7f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #A8654A;
+  transform: translateY(-2px);
+}
+
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(217, 152, 115, 0.8);
 }
 
 .cat-card {
-  border: 1px solid #ddd;
+  border: 1px solid #D99873;
+  border-radius: 12px;
   text-align: center;
-  height: 250px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
+  background-color: #ecc49e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-card img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.cat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cat-info {
-  background: #f8f9fa;
-  border-radius: 4px;
+  background: #E8C1A0;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.cat-info h3 {
+  color: #A8654A;
+}
+
+.cat-info p {
+  color: #6E5F5F;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 1em;
+  }
 }
